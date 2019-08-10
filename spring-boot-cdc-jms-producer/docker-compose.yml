@@ -1,0 +1,16 @@
+version: '3'
+services:
+  spring-app:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: sabinolab/spring-boot-cdc-jms-producer
+    container_name: spring-boot-cdc-jms-producer
+    ports:
+      - "8080:8080"
+    networks:
+      - sabino-network
+
+networks:
+  sabino-network:
+    driver: bridge
