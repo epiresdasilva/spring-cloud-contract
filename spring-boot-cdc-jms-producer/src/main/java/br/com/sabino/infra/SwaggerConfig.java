@@ -19,7 +19,7 @@ public class SwaggerConfig {
     public Docket apiDocket() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("br.com.sabino.api.controllers"))
+                .apis(RequestHandlerSelectors.basePackage("br.com.sabino.api"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(getApiInfo());

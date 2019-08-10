@@ -1,12 +1,14 @@
-package br.com.sabino.api.controllers.responses;
+package br.com.sabino.domain.entities;
 
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
+
+import java.io.Serializable;
 import java.util.UUID;
 
 @Getter
-@Builder
-public class BeerResponse {
+@NoArgsConstructor
+@AllArgsConstructor
+public class Beer implements Serializable {
     private UUID id;
     private String name;
     private String ibu;

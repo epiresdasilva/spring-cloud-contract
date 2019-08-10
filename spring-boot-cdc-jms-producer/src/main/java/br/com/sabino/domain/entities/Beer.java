@@ -4,23 +4,26 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.AllArgsConstructor;
 import lombok.Setter;
-import lombok.NoArgsConstructor;
 import lombok.EqualsAndHashCode;
 
+import javax.annotation.PostConstruct;
 import java.io.Serializable;
 import java.util.UUID;
 
 @Getter
 @Setter
 @Builder
-@NoArgsConstructor
 @EqualsAndHashCode
 @AllArgsConstructor
 public class Beer implements Serializable {
-    private UUID id = UUID.randomUUID();
+    private UUID id;
     private String name;
     private String ibu;
     private String style;
     private String description;
-    private String alcoholTenor;
+
+    @PostConstruct
+    public void init() {
+       id = UUID.randomUUID();
+    }
 }
