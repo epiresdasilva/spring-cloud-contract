@@ -4,7 +4,7 @@ You always need confidence when pushing new features into a new application or s
 
 Microservices 
 - [spring-boot-cdc-jms-producer](https://github.com/RicardoSabinolrs/spring-cloud-contract/tree/master/spring-boot-cdc-jms-producer)
-- [spring-boot-cdc-jms-receiver](https://github.com/RicardoSabinolrs/spring-cloud-contract/tree/master/spring-boot-cdc-jms-receiver.git)
-- [spring-boot-cdc-rest-api](https://github.com/RicardoSabinolrs/spring-cloud-contract/tree/master/spring-boot-cdc-rest-api.git)
+- [spring-boot-cdc-jms-receiver](https://github.com/RicardoSabinolrs/spring-cloud-contract/tree/master/spring-boot-cdc-jms-receiver)
+- [spring-boot-cdc-rest-api](https://github.com/RicardoSabinolrs/spring-cloud-contract/tree/master/spring-boot-cdc-rest-api)
 
 ![Alt text](docs/services.jpg?raw=true "Title")
