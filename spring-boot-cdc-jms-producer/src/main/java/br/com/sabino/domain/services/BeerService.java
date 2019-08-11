@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.UUID;
+
 @Service
 @Transactional
 @AllArgsConstructor
@@ -14,6 +16,7 @@ public class BeerService {
     private final MessageSender messageSender;
 
     public Beer create(Beer beer) {
+        beer.setId(UUID.randomUUID());
         messageSender.send(beer);
         return beer;
     }

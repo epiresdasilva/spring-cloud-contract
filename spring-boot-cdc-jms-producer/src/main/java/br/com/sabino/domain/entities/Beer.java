@@ -21,9 +21,5 @@ public class Beer implements Serializable {
     private String ibu;
     private String style;
     private String description;
-
-    @PostConstruct
-    public void init() {
-       id = UUID.randomUUID();
-    }
+    private String alcoholTenor;
 }

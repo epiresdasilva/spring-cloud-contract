@@ -1,0 +1,26 @@
+spring:
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: create-drop
+      naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      show_sql: false
+      format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /console
+      settings:
+        trace: false
+        web-allow-others: false
+
+# Logging
+logging:
+  pattern:
+    console: "%d{yy/MM/dd HH:mm:ss} %p [%X{message.id}] %c{1}: %m%n"
+  level:
+    com.contaazul.batchscheduler: INFO
+    io.jaegertracing.internal.reporters.LoggingReporter: OFF
+
+server:
+  port: 8082
