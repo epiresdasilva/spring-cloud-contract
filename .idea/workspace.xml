@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="003f55be-00d9-46a4-a0d0-33a1fbe437cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/spring-cloud-contract.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/services.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/services.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-cdc-jms-producer/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-cdc-jms-receiver/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-cdc-rest-api/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565488911282</updated>
-      <workItem from="1565488912733" duration="707000" />
+      <workItem from="1565488912733" duration="1377000" />
     </task>
     <servers />
   </component>
