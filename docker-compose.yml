@@ -1,0 +1,55 @@
+version: '3.5'
+services:
+  activemq:
+    image: webcenter/activemq
+    ports:
+      - 8161:8161
+      - 61616:61616
+    networks:
+      - sabino_network
+    environment:
+      ACTIVEMQ_NAME: activemq
+      ACTIVEMQ_REMOVE_DEFAULT_ACCOUNT: 'True'
+      ACTIVEMQ_ADMIN_LOGIN: admin
+      ACTIVEMQ_ADMIN_PASSWORD: admin
+  jms-producer:
+    build:
+      context: ./spring-boot-cdc-jms-producer
+      dockerfile: Dockerfile
+    image: sabinolab/spring-boot-cdc-jms-producer
+    container_name: jms-producer
+    ports:
+      - "8080:8080"
+    networks:
+      - sabino_network
+    depends_on:
+      - activemq
+  jms-receiver:
+    build:
+      context: ./spring-boot-cdc-jms-receiver
+      dockerfile: Dockerfile
+    image: sabinolab/spring-boot-cdc-jms-receiver
+    container_name: jms-receiver
+    ports:
+      - "8081:8081"
+    networks:
+      - sabino_network
+    depends_on:
+      - activemq
+  rest-api:
+    build:
+      context: ./spring-boot-cdc-rest-api
+      dockerfile: Dockerfile
+    image: sabinolab/spring-boot-cdc-rest-api
+    container_name: webapp-rest-api
+    ports:
+      - "8082:8082"
+    networks:
+      - sabino_network
+    depends_on:
+      - activemq
+
+networks:
+  sabino_network:
+    name: sabino_network
+    driver: bridge

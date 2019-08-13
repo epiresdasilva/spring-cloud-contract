@@ -9,7 +9,7 @@ $ cd spring-boot-cdc-rest-api/
 $ mvn clean install -U
 $ docker-compose up --build -d
 ```
-> :dart: You can access the API documentation via browser: http://localhost:8080/swagger-ui.html
+> :dart: You can access the API documentation via browser: http://localhost:8082/swagger-ui.html
 
 ## Project description
 

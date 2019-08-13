@@ -1,12 +1,8 @@
 package br.com.sabino.domain.entities;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.AllArgsConstructor;
-import lombok.Setter;
-import lombok.EqualsAndHashCode;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
 
-import javax.annotation.PostConstruct;
 import java.io.Serializable;
 import java.util.UUID;
 
@@ -16,6 +12,7 @@ import java.util.UUID;
 @EqualsAndHashCode
 @AllArgsConstructor
 public class Beer implements Serializable {
+    @JsonIgnore
     private UUID id;
     private String name;
     private String ibu;
