@@ -7,7 +7,6 @@
 $ git clone https://github.com/RicardoSabinolrs/spring-boot-cdc-jms-producer.git
 $ cd spring-boot-cdc-jms-producer/
 $ mvn clean install -U
-$ docker-compose up --build -d
 ```
 > :dart: You can access the API documentation via browser: http://localhost:8080/swagger-ui.html
 
