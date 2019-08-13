@@ -7,7 +7,6 @@
 $ git clone https://github.com/RicardoSabinolrs/spring-boot-cdc-jms-receiver.git
 $ cd spring-boot-cdc-jms-receiver/
 $ mvn clean install -U
-$ docker-compose up --build -d
 ```
 > :dart: You can access the API documentation via browser: http://localhost:8081/swagger-ui.html
 
