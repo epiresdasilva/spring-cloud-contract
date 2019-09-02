@@ -19,3 +19,5 @@ spring:
       time-to-live: 36000
 server:
   port: 8081
+beerapi:
+  url: http://webapp-rest-api:8082

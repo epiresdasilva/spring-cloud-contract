@@ -51,5 +51,4 @@ services:
 
 networks:
   sabino_network:
-    name: sabino_network
     driver: bridge
